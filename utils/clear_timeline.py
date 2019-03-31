@@ -1,10 +1,11 @@
 import tweepy
+import os
 
 # Authentication details. To  obtain these visit dev.twitter.com
-access_token = {YOUR_ACCESS_TOKEN}
-access_token_secret = {YOUR_ACCESS_TOKEN_SECRET}
-consumer_key = {YOUR_CONSUMER_KEY}
-consumer_secret = {YOUR_CONSUMER_SECRET}
+access_token = os.getenv('YOUR_ACCESS_TOKEN')
+access_token_secret = os.getenv('YOUR_ACCESS_TOKEN_SECRET')
+consumer_key = os.getenv('YOUR_CONSUMER_KEY')
+consumer_secret = os.getenv('YOUR_CONSUMER_SECRET')
 
 if __name__ == '__main__':
     # Create authentication token
